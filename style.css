@@ -121,8 +121,8 @@ ul {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 500px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -130,7 +130,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px; /* Espaçamento ao redor dos cards */
+    margin: 10px;
     box-sizing: border-box;
 }
 
@@ -163,6 +163,37 @@ ul {
     font-weight: bold;
 }
 
+form {
+    margin: auto;
+    width: 600px;
+    padding: 1em;
+  
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+
+input, textarea {
+    width: 300px;
+    box-sizing: border-box;
+}
+
+textarea {
+    vertical-align: top;
+    height: 10em;
+}
+
+.button {
+    padding-left: 100px;
+}
+
+button {
+    margin-left: .5em;
+}
+
 footer {
     background-color: var(--cor2);
     color: white;
@@ -183,4 +214,88 @@ footer > a {
     border-radius: 0px;
     transition-duration: 0.5s;
     text-transform: none;
+}
+
+/* Responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    form {
+        width: 100%;
+        padding: 1em;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+
+    .button {
+        padding-left: 0;
+    }
+
+    .section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 0.2em;
+    }
+
+    button {
+        width: 100%;
+    }
 }
