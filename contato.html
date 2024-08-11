@@ -31,22 +31,22 @@
         </section>
         <section class="par">
             <br>
-            <fieldset>
-                <legend>Formulário para Contato</legend>
+            <fieldset> <!--Utilizei o fieldset para agrupar elementos, no caso os itens do formulário-->
+                <legend>Formulário para Contato</legend> <!--Legenda dos itens agrupados-->
                     <form action="#" method="post">
-                        <div>
+                        <div> <!-- Esta div contém o campo de entrada para o nome do usuário -->
                             <label for="inome">Nome:</label>
                             <input type="text" name="nome" id="inome" autocomplete="name" required minlength="5" maxlength="20" placeholder="Insira seu nome completo">
                         </div>
-                        <div>
+                        <div> <!-- Esta div contém o campo de entrada para o e-mail do usuário -->
                             <label for="iemail">E-mail:</label>
                             <input type="email" name="email" id="iemail" autocomplete="email" required minlength="5" maxlength="20" placeholder="insira seu e-mail">
                         </div>
-                        <div>
-                            <label for="itexto">Texto</label>
+                        <div> <!-- Esta div contém o campo de entrada para a mensagem do usuário -->
+                            <label for="itexto">Mensagem:</label>
                             <textarea name="texto" id="itexto" minlength="5" maxlength="500" placeholder="insira sua mensagem, até 500 letras." required></textarea>
                         </div>
-                        <div class="button">
+                        <div class="button"> <!-- Esta div contém o campo para o usuário enviar o formuláro -->
                             <button type="submit">Enviar</button>
                         </div>
                     </form>

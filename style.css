@@ -1,5 +1,6 @@
 @charset "UTF-08";
 
+/* Cores principais do site, foi utilizado Harmonia das cores Complementar no Adobe Color*/
 :root { 
     --cor1: #E8AA2E;
     --cor2: #4E6B94;
@@ -179,6 +180,7 @@ label {
 input, textarea {
     width: 300px;
     box-sizing: border-box;
+    margin-left: 15px;
 }
 
 textarea {
@@ -216,7 +218,7 @@ footer > a {
     text-transform: none;
 }
 
-/* Responsivo para dispositivos móveis */
+/* Responsividade */
 @media (max-width: 768px) {
 
     header {
@@ -266,6 +268,7 @@ footer > a {
     }
 }
 
+/*Responsividade*/
 @media (max-width: 480px) {
     header {
         padding: 0.5rem;
